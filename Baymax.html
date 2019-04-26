@@ -4,42 +4,44 @@
 <meta charset="utf-8">
 <style>
 body{
-background: #595959;
+background:	#f6f2b8;
 }
+
 #baymax{
-margin: 0 auto;
+margin: 50px 0 auto;
 height: 600px;
-overflow: hidden;
 }
+
 #head, #torso, #belly, #cover, #left-arm, #right-arm,#left-leg, #right-leg{
 background: #fff;
 margin: 0 auto;
 }
+
 #head{
 height: 64px;
 width: 100px;
 border-radius: 50%;
-
 margin-bottom: -20px;
-border-bottom: 5px solid #e0e0e0;
-z-index: 100;
+border-bottom: 3px solid #d7d8c4;
 position: relative;
+border: 2px solid #000000;
 }
+
 #eye, #eye2{
-width: 11px;
+width: 13px;
 height: 13px;
 background: #282828;
 border-radius: 50%;
 position: relative;
 top: 30px;
 left: 27px;
-transform: rotate(8deg);
 }
+
 #eye2{
-transform: rotate(-8deg);
-left: 69px;
 top: 17px;
+left: 69px;
 }
+
 #mouth{
 width: 38px;
 height: 1.5px;
@@ -48,108 +50,80 @@ position: relative;
 left: 34px;
 top: 10px;
 }
+
 #torso, #belly{
-
 height: 200px;
-width: 180px;
-
-border-radius: 47%;
-border: 5px solid #e0e0e0;
+width: 190px;
+border-radius: 55%;
+border: 3px solid #000000;
 border-top: none;
-z-index: 1;
 }
+
 #belly{
 height: 300px;
 width: 245px;
 margin-top: -140px;
-z-index: 5;
+border-radius: 46%;
 }
+
 #cover{
 width: 190px;
-
 height: 150px;
-
 position: relative;
 top: -20px;
 border-radius: 50%;
 }
+
 #heart{
 width: 25px;
 height: 25px;
 border-radius: 50%;
 position: relative;
-box-shadow: 2px 5px 2px #ccc inset;
+box-shadow: 2px 2px 2px #ded7ae;
 right: -115px;
 top: 40px;
 z-index: 111;
-border: 1px solid #ccc;
+border: 1.5px solid #000000;
 }
+
 #left-arm, #right-arm{
 height: 270px;
 width: 120px;
 border-radius: 50%;
-
 position: relative;
 top: -350px;
 left: -100px;
 transform: rotate(20deg);
-z-index: -1;
+z-index: -5;
+border: 2px solid #000000;
 }
+
 #right-arm{
 transform: rotate(-20deg);
 left: 100px;
 top: -620px;
 }
-#l-bigfinger, #r-bigfinger{
-height: 50px;
-width: 20px;
-border-radius: 50%;
-background: #fff;
-position: relative;
-top: 250px;
-left: 50px;
-transform: rotate(-50deg);
-}
-#r-bigfinger{
 
-transform: rotate(50deg);
-}
-#l-smallfinger, #r-smallfinger{
-height: 35px;
-width: 15px;
-border-radius: 50%;
-background: #fff;
-position: relative;
-top: 195px; 
-left: 66px;
-transform: rotate(-40deg);
-}
-#r-smallfinger{
 
-transform: rotate(40deg);
-
-left: 37px;
-}
 #left-leg, #right-leg{
 height: 170px;
 width: 90px;
 border-radius: 40% 30% 10px 45%;
-
 position: relative;
 top: -640px;
 left: -45px;
 transform: rotate(-1deg);
 z-index: -2;
-
+border: 2px solid #000000;
 }
+
 #right-leg{
-
 border-radius: 30% 40% 45% 10px;
-
 top: -810px;
 left: 50px;
 transform: rotate(1deg);
 }
+
 </style>
 <title>Baymax</title>
 </head>
@@ -167,12 +141,10 @@ transform: rotate(1deg);
 <div id="cover"></div>
 </div>
 <div id="left-arm">
-<div id="l-bigfinger"></div>
-<div id="l-smallfinger"></div>
+
 </div>
 <div id="right-arm">
-<div id="r-bigfinger"></div>
-<div id="r-smallfinger"></div>
+
 </div>
 <div id="left-leg"></div>
 <div id="right-leg"></div>
